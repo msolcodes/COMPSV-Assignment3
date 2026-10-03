@@ -1,0 +1,23 @@
+Question 1: Why is a stack the right choice for undo/redo?
+
+A stack is the better choice for an undo/redo because it makes the last addition be the first out. 
+It's like a stack of books; the top book on the stack is the first one to take off. 
+So, if the user makes several changes and they select undo, 
+the last change they made will be the first one that is undone. 
+This is efficient because it follows the natural order that matches how undo/redo works.
+
+Question 2: Why is a queue better suited for the help desk?
+
+Because it follows the order that the first one in is the first one out, 
+like in a line of customers. The last person that arrives is at the end of the line and will be helped last, 
+and the person at the front arrived first, and will be helped before anyone else. 
+This is a good choice because customers are kept in the order in which they arrived, 
+and the program does not have to search for who should be next.
+
+Question 3: How do your implementations differ from Python’s built-in lists?
+
+With built-in lists, I relied on Python’s built-in ways to store, add, and remove items. 
+For this program, the stack and queue were built using nodes and pointers instead of the built-in features. 
+The stack was responsible for keeping track of the top, while the queue kept track of the front and rear. 
+This allowed more control over how items were added and removed.
+
